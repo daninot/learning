@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>      <!--passando as informações para o navegador-->
+        <meta charset="UTF-8">      <!--dicionário-->
+        <title>Contato - WEG Equipamentos Elétricos</title> 
+        
+        <link rel="stylesheet" href="reset.css"> <!--a ordem das coisas importa. eu tenho q colocar o reset antes p ele limpar as configurações do navegador.-->
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header>        <!--cabeçalho do conteúdo-->
+            <div class="caixa"> 
+                <h1><img src="weglogoredimensionado.png"></h1>
+                <nav>
+                    <ul>    <!--tag para lista não ordenada-->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="https://www.weg.net/institutional/BR/pt/contact/contact-us">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+           
+        </header>
+
+
+        <main>
+            <form>  
+                <label for "nomesobrenome">Nome e Sobrenome:</label> <!--dentro do formulário não usamos tags, usamos etiquetas para o input-->
+                <input type="text" id="nomesobrenome" class="input-padrao"> <!--toda tag de input tem que ter um tipo; aqui é o campo para receber a informação-->
+
+                <label for "email">E-mail:</label> <!-- esse for "email faz com q ao clicar em cima do texto, a caixa fique ativa e receba o texto"-->
+                <input type="text" id="email" class="input-padrao"> 
+
+                <label for "telefone">Telefone:</label> <!--a tag label é uma etiqueta para a entrada de dados, para o input-->
+                <input type="text" id="telefone" class="input-padrao">
+
+                <!--caixa de texto-->
+                <label for="mensagem"></label >
+                <textarea cols="30" rows="10" id="mensagem" class="input-padrao"></textarea> <!--diferente da tag input ela é uma tag de conteúdo-->
+
+                <div> 
+                    <p>Como prefere nosso contato?</p>
+                    <!--caixa de opção (radio box)-->
+                    <label for="radio-email"><input type="radio" name="contato" value="Email" id="radio-email">Email</label> <!--coloquei o input antes do texto p caixa aparecer antes do texto-->
+                    <!--<label for="radio-email">Email</label>
+                    <input type="radio" name="contato" value="Email" id="radio-email">-->
+    
+                    <label for="radio-telefone"><input type="radio" name="contato" value="Telefone" id="radio-telefone">Telefone</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp">Whatsapp</label>
+                    <!--a propriedade name faz com que eles pertençam ao mesmo grupo, oq faz com q apenas uma opção seja selecionada-->
+                </div>
+                
+                <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+                <!--todo formulário vai ter um input de submit-->
+                <input type="submit" value="Enviar formulário"> <!--o valor garante qual o texto que irá aparecer no botão-->
+            </form>
+
+        </main>
+
+
+        <footer>  <!--rodapé-->
+            <img src="">
+            <p class="copyright">&copy;Copyright WEG Equipamentos Elétricos - 2022</p>
+        </footer>
+    </body>
+</html>

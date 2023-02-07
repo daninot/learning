@@ -1,0 +1,128 @@
+/*marcadores*/
+header{ 
+    background-color: #BBBBBB;
+    padding: 20px 0; /*espaçamento interno: pra cima e p baixo, 0 p direita e esquerda*/
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto; /*pra cima e pra baixo, direita e esquerda*/
+}
+
+nav{
+    position: absolute; /*tipo do posicionamento. também tem o static e relative*/
+    /*display: inline; 
+    margin: 0 0 0 15px;*/
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline; /*estilo do alinhamento. existe o inline e o block */
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase; /*deixa o texto em maiúsculo*/
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none; /*essa decoração que deixa o texto sublinhado*/
+}
+
+nav a:hover {    /*comportamento quando o cursor passa por cima do texto. a tag vem depois do item o qual quero impactar*/
+    color: #c78c19
+    text-decoration underline;
+}
+
+.produtos{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    vertical-align: top;
+    /*background-color: #CCCCCC;*/
+    margin: 0 2.5%; /*espaçamento externo*/
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*border-color: #000;
+    border-width: 2px;
+    border-style: solid; */
+    border: 2px solid #000;
+    border-radius: 10px;
+
+}
+
+.produtos li:hover { /*hover-> quando o usuário passa o cursor sobre o elemento*/
+    border-color: #C78C19
+}
+
+.produtos li:active { /*active -> quando o elemento está sendo ativado pelo usuário*/
+    border-color: #088c19
+}
+
+.produtos li:hover h2{ /*quero que quando eu passo o mouse por cima de algum item da lista de produtos, o h2 seja alterado*/
+    font-size: 34px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preço {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; /*ou margin-top: 10 px*/
+}
+
+footer{
+    text-align: center;
+    background-color: url(""); /*adiciona uma imagem de fundo em um elemento*/
+    padding: 40px 0; 
+
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+
+}
+
+main{   /*queremos o conteúdo com 940 pixels de largura e q esteja sempre centralizado*/
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{   /*todo elemento tem um tipo de display; inline (ocupa só o tamanho do conteúdo) ou display do tipo block (ocupa 100% da largura da página) */
+    margin: 40px 0; /*margem superior e inferior de 40 px, pra cada lado 0*/
+}
+
+form label, form p{ /*todos os campos que são label do meu formulário..., todos os parágrafos dentro do formulário...*/
+    display: block;
+    font-size: 20px;
+    /*espaço entre a label e o campo q vem abaixo dela:*/
+    margin: 0 0 10px;
+}
+
+.input-padrao{ /* ao invés de chamar de "form input, form textarea" vou usar classes, p separar melhor*/
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px; /*lembrando que a propriedade padding serve p alterar o espaçamento interno do conteúdo*/
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
